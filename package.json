@@ -1,0 +1,71 @@
+{
+  "name": "@marklogic-community/grove-values-redux",
+  "version": "1.0.0-rc.1",
+  "description": "Redux module to power MarkLogic search UIs",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "build": "eslint . && webpack -p",
+    "build:dev": "npm run lint && webpack --mode=development",
+    "test": "npm run lint && jest",
+    "test:watch": "npm run lint && jest --watch"
+  },
+  "jest": {
+    "testURL": "http://localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:marklogic-community/grove-values-redux.git"
+  },
+  "keywords": [
+    "Redux",
+    "MarkLogic",
+    "Search"
+  ],
+  "author": "Patrick McElwee <patrick.mcelwee@marklogic.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/marklogic-community/grove-values-redux/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^21.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "deep-freeze": "0.0.1",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jest": "^21.1.0",
+    "nock": "^9.0.14",
+    "prettier": "^1.13.7",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.2.3",
+    "redux-thunk": "~2",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.11"
+  },
+  "peerDependencies": {
+    "redux": "^2.0.0 || ^3.0.0 || ^4.0.0-0"
+  },
+  "contributors": [
+    {
+      "name": "Patrick McElwee",
+      "url": "https://github.com/patrickmcelwee"
+    },
+    {
+      "name": "Marianne Myers",
+      "url": "https://github.com/mariannemyers"
+    },
+    {
+      "name": "Geert Josten",
+      "url": "https://github.com/grtjn"
+    }
+  ]
+}
